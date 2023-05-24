@@ -1,0 +1,66 @@
+{% extends 'main.html' %} 
+
+{% block content %} 
+
+
+    <div class="row ">
+        <div class="col d-flex justify-content-between">
+            <h4>{{ league }}</h4>
+            <a href="{% url 'dashboard' %}" >Dashboard</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row mt-3">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5>My picks</h5>
+                    <hr>
+
+                    <div class="d-flex justify-content-between">
+                        <p>MSFT</p>
+                        <p>16000 (+8%)</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Apple</p>
+                        <p>28000 (-14%)</p>                        
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Gamestop</p>
+                        <p>58000 (+43%)</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Current standing</h5>
+                    <hr>
+                    
+                    <div class="d-flex justify-content-between">
+                        <p>Frank</p>
+                        <p>140000 (+40%)</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p>Mig</p>
+                        <p>102000 (+2%)</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p>Sarah</p>
+                        <p>94000 (-6%)</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock content %}

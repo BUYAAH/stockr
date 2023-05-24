@@ -1,0 +1,56 @@
+{% extends 'main.html' %} 
+
+{% block content %}  
+
+
+<div class="row mb-3">
+    <div class="col">
+        
+        <div class="card">
+            <div class="card-body">
+                <h4>Join league</h4>
+                <hr>
+                <input type="number" class="form-control" placeholder="Group id" />
+            </div>
+        </div>
+
+    </div>
+    <div class="col">
+
+        <div class="card">
+            <div class="card-body">
+                <h4>Create league</h4>
+                <hr>
+                <a href="#" class="btn btn-outline-primary">Create</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                
+                <h3>My leagues</h3>
+                <hr>
+                ...Table maybe 
+                <br>
+
+                <a href="{% url 'league' 1 %}" class="btn btn-outline-primary">Go to league 1</a>
+                <br>
+                <br>
+                <a href="{% url 'league' 2 %}" class="btn btn-outline-primary">Go to league 2</a>
+                <br>
+                <br>
+                <a href="{% url 'league' 3 %}" class="btn btn-outline-primary">Go to league 3</a>
+            
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
